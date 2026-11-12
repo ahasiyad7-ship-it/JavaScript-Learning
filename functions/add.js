@@ -1,8 +1,8 @@
-var a = 90
-var b = 80
-
-function add()
+function area(l,b)
 {
-    console.log(a+b)
+    var a = l*b
+    console.log("Area is:" +a)
 }
-add()
+var length = 45
+var breadth = 80
+area(45,80)
