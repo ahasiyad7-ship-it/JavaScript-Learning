@@ -1,0 +1,19 @@
+
+
+  <h2>My List</h2>
+
+  <input id="myInput" placeholder="Type something">
+  <button onclick="addItem()">Add</button>
+
+  <ul id="myList"></ul>
+
+  <script>
+    function addItem() {
+      let value = document.getElementById("myInput").value;
+      let li = document.createElement("li");
+      li.innerText = value;
+      document.getElementById("myList").appendChild(li);
+      document.getElementById("myInput").value = "";
+    }
+  </script>
+
